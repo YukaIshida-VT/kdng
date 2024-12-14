@@ -9,12 +9,10 @@
         body, html {
         height: 100%;
         margin: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         }
         .hero {
-            background-color: #f8f9fa;
+            background-color: #fef5e0;
             padding: 50px 20px;
             text-align: center;
         }
@@ -29,7 +27,7 @@
             color: #555;
         }
         .section {
-            padding: 40px 20px;
+            padding: 40px 50px;
         }
         .section h2 {
             font-size: 2rem;
@@ -48,16 +46,24 @@
         .footer {
             text-align: center;
             padding: 20px;
-            background-color: #343a40;
-            color: white;
+            background-color: #ececec;
+            color: #333;
             margin-bottom: 0;
-            position: absolute;
+            position: sticky;
             bottom: 0;
             width: 100%;
         }
         .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+            background-color: #da6b64;
+            border-color: #da6b64;
+        }
+        .btn-primary:hover {
+            background-color: #e08e88;
+            border-color: #e08e88;
+        }
+        .topImage {
+            max-height: 600px;
+            max-width: 800px;
         }
     </style>
 </head>
@@ -66,22 +72,25 @@
         <div class="hero">
             <h1>Welcome to the Kansai Developer & Nomad Group</h1>
             <p>Connecting web developers and digital nomads in Kyoto and Osaka</p>
-            <a href="https://www.meetup.com/kansai-developer-and-nomad-group/" class="btn btn-primary btn-lg mt-4">Join Us on Meetup</a>
+            <div>
+                <img class="topImage" src="images/IMG_6958.jpg" alt="Kansai Developer & Nomad Group" width="100%">
+            </div>
+            <a href="https://www.meetup.com/kansai-developer-and-nomad-group/" class="btn btn-primary btn-lg mt-4" target="_blank">Join Us on Meetup</a>
         </div>
     
-        <section class="section">
+        <div class="section">
             <h2>About Us</h2>
             <p>This is a group for web developers and digital nomads based in Kyoto and Osaka. We aim to organize coworking sessions, go on hikes, and host lunch gatherings. Even if you're not a developer or nomad, anyone interested is more than welcome to join!</p>
-        </section>
+        </div>
     
-        <section class="section">
+        <div class="section">
             <h2>Upcoming Activities</h2>
             <ul>
                 <li>🔹 Coworking sessions at trendy cafes</li>
                 <li>🔹 Group hikes to explore the Kansai region</li>
                 <li>🔹 Lunch and dinner gatherings to connect and share ideas</li>
             </ul>
-        </section>
+        </div>
     
         <div class="footer">
             <p>&copy; 2024 Kansai Developer & Nomad Group. All rights reserved.</p>
